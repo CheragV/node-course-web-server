@@ -40,6 +40,13 @@ app.get('/about', (req, res) => {
     })
 })
 
+app.get('/portfolio', (req, res) => {
+    res.render('base.hbs', {
+        pageTitle: 'Portfolio Page',
+        description: 'This is my portfolio'
+    })
+})
+
 app.get('/*', (req, res) => {
     res.send({
         errorMessage: 'Unable to Handle request'
