@@ -40,7 +40,7 @@ app.get('/about', (req, res) => {
     })
 })
 
-app.get('/portfolio', (req, res) => {
+app.get('/projects', (req, res) => {
     res.render('base.hbs', {
         pageTitle: 'Portfolio Page',
         description: 'This is my portfolio'
